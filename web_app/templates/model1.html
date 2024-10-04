@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <form method="POST">
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+        <label for="sex">Sex (1=male, 0=female):</label><br>
+        <input type="number" id="sex" name="sex" required><br><br>
+        <label for="cp">CP (chest pain type):</label><br>
+        <input type="number" id="cp" name="cp" required><br><br>
+        <label for="trestbps">Trestbps (resting blood pressure):</label><br>
+        <input type="number" id="trestbps" name="trestbps" required><br><br>
+        <label for="chol">Chol (serum cholesterol):</label><br>
+        <input type="number" id="chol" name="chol" required><br><br>
+        <label for="fbs">FBS (fasting blood sugar > 120 mg/dl):</label><br>
+        <input type="number" id="fbs" name="fbs" required><br><br>
+        <label for="restecg">Restecg (resting electrocardiographic results):</label><br>
+        <input type="number" id="restecg" name="restecg" required><br><br>
+        <label for="thalach">Thalach (maximum heart rate achieved):</label><br>
+        <input type="number" id="thalach" name="thalach" required><br><br>
+        <label for="exang">Exang (exercise induced angina):</label><br>
+        <input type="number" id="exang" name="exang" required><br><br>
+        <label for="oldpeak">Oldpeak (ST depression induced by exercise):</label><br>
+        <input type="number" id="oldpeak" name="oldpeak" required><br><br>
+        <label for="slope">Slope (slope of the peak exercise ST segment):</label><br>
+        <input type="number" id="slope" name="slope" required><br><br>
+        <label for="ca">CA (number of major vessels colored by fluoroscopy):</label><br>
+        <input type="number" id="ca" name="ca" required><br><br>
+        <label for="thal">Thal (thalassemia):</label><br>
+        <input type="number" id="thal" name="thal" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+    {% if result %}
+    <h2>{{ result }}</h2>
+    {% endif %}
+</body>
+</html>
