@@ -33,9 +33,12 @@ def model1_page():
                       float(request.form['thal'])]
         input_data = np.array([input_data])
         
+        # Reshape input data to match the model's expected input shape
+        input_data = np.resize(input_data, (1, 100))  # Adjust this to match your model's input shape
+        
         # Make prediction
         prediction = model1.predict(input_data)
-        result = 'Heart Disease Detected' if prediction > 0.5 else 'No Heart Disease'
+        result = 'Heart Disease Detected' if prediction[0][0] > 0.5 else 'No Heart Disease'
 
         return render_template('model1.html', result=result)
     return render_template('model1.html')
