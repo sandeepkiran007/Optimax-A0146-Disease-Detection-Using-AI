@@ -1,7 +1,4 @@
-Here's a sample README file for your GitHub project:
-
-```markdown
-# **Disease Detection Using AI - INTEL GEN AI Hackathon**
+# Disease Detection
 
 ## Overview
 The Disease Detection project is designed to identify heart disease and Alzheimer's disease using machine learning algorithms. Developed as part of the Intel One API Hackathon by Team Optimax, this web application is built using Flask and leverages powerful machine learning libraries for accurate predictions.
@@ -9,7 +6,7 @@ The Disease Detection project is designed to identify heart disease and Alzheime
 ## Team Members
 - Abdul Rahman
 - Sandeep Kiran
-- Immanuel
+- Immanue
 - Manimaran
 
 ### Team Code: A0146
