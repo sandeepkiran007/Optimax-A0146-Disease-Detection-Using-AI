@@ -5,9 +5,9 @@ The Disease Detection project is designed to identify heart disease and Alzheime
 
 ## Team Members
 - Abdul Rahman
-- Sandeep Kiran
-- Immanue
-- Manimaran
+- Sandeep 
+- Immanuel
+- Manimaran 
 
 ### Team Code: A0146
 
