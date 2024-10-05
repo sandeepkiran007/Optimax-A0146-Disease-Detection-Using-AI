@@ -3,46 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart Disease Prediction</title>
+    <title>Disease Prediction Models</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            /* Set the background image */
+            background-image: url('/static/bg-index.jpg'); 
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            height: 100vh; /* Make the body full height */
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Set a default font */
+            color: white; /* Change text color for visibility */
         }
         .container {
-            text-align: center;
-            background: #fff;
+            max-width: 800px;
+            margin: 50px auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            color: #fff;
-            background-color: #007BFF;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-        a:hover {
-            background-color: #0056b3;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+            border-radius: 8px; /* Rounded corners */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Heart Disease Prediction Model</h1>
-        <a href="/model1">Go to Heart Disease Prediction</a>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Disease Prediction Models</h1>
+        <div class="text-center">
+            <a href="/model1" class="btn btn-primary btn-lg mx-2">Go to Heart Disease Prediction</a>
+            <a href="/model2" class="btn btn-success btn-lg mx-2">Go to Alzheimer's Disease Prediction</a>
+        </div>
     </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
